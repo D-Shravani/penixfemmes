@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Event Gallery</h1>
+    </header>
+
+
+
+
+
+    <section class="gallery">
+        <div class="gallery-item" onclick="openModal('image1.jpg')">
+            <img src="3.png" alt="Event Image 1">
+            <div class="caption">
+                <h3>Event Title 1</h3>
+                <p>A brief description of the event goes here. Highlight key details for context.</p>
+            </div>
+        </div>
+        <div class="gallery-item" onclick="openModal('image2.jpg')">
+            <img src="3.png" alt="Event Image 2">
+            <div class="caption">
+                <h3>Event Title 2</h3>
+                <p>Share insights or stories about this moment captured in the gallery.</p>
+            </div>
+        </div>
+        <div class="gallery-item" onclick="openModal('image3.jpg')">
+            <img src="3.png" alt="Event Image 3">
+            <div class="caption">
+                <h3>Event Title 3</h3>
+                <p>A short and engaging description to attract the audience's attention.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="scripts.js"></script>
+</body>
+<style>
+    /* General Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #1a73e8;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.gallery-item {
+    position: relative;
+    margin: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    background-color: white;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Caption Styling */
+.caption {
+    padding: 15px;
+    background-color: #fafafa;
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    cursor: pointer;
+    color: #bbb;
+}
+
+</style>
+</html>

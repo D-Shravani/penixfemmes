@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Logo styling */
+        
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image fits within the circular shape */
+        }
+
+        #events {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 100px auto 0 auto; /* Add top margin to avoid overlap with logo */
+        }
+
+        .event {
+            margin-bottom: 30px;
+        }
+
+        .event h3 {
+            color: #007BFF;
+        }
+
+        .event ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .event ul li {
+            margin-bottom: 5px;
+        }
+
+        .event p {
+            margin: 10px 0;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+  
+    <!-- Events Section -->
+    <section id="events">
+        <h2>Upcoming Events</h2>
+
+        <!-- Seminars/Workshops -->
+        <div class="event">
+            <img src="3.png" alt="Event Image">
+            <h3>Seminars & Workshops</h3>
+            <p>Join us for educational and skill-building events designed to empower and educate. Our seminars and workshops cover a variety of topics relevant to personal and professional growth.</p>
+            <ul>
+                <li><strong>Date:</strong> September 15, 2024</li>
+                <li><strong>Time:</strong> 10:00 AM - 2:00 PM</li>
+                <li><strong>Location:</strong> Phoenix Center, 123 Phoenix Lane, City, State</li>
+            </ul>
+        </div>
+
+        <!-- Self-Defense Sessions -->
+        <div class="event">
+            <h3>Self-Defense Sessions</h3>
+            <p>Our practical self-defense sessions focus on techniques and strategies to enhance personal safety. Learn from experienced instructors in a supportive environment.</p>
+            <ul>
+                <li><strong>Date:</strong> September 22, 2024</li>
+                <li><strong>Time:</strong> 1:00 PM - 3:00 PM</li>
+                <li><strong>Location:</strong> Phoenix Gym, 456 Safety Street, City, State</li>
+            </ul>
+        </div>
+
+        <!-- Mental Health Awareness Sessions -->
+        <div class="event">
+            <h3>Mental Health Awareness Sessions</h3>
+            <p>These programs are designed to promote mental well-being, providing resources and support to help individuals manage stress and maintain mental health.</p>
+            <ul>
+                <li><strong>Date:</strong> September 29, 2024</li>
+                <li><strong>Time:</strong> 2:00 PM - 4:00 PM</li>
+                <li><strong>Location:</strong> Wellness Center, 789 Harmony Blvd, City, State</li>
+            </ul>
+        </div>
+
+        <div class="nav-buttons">
+            <button id="back-button" onclick="location.href='previous-page.html'">Back</button>
+            <button id="next-button" onclick="location.href='self-defense.html'">Next</button>
+        </div>
+    </section>
+
+</body>
+</html>
